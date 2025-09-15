@@ -1,8 +1,8 @@
 #!/bin/bash
-# Install Flutter and build the project
 
-git clone https://github.com/flutter/flutter.git --depth 1 -b stable --single-branch ~/flutter
-export PATH="$PATH:~/flutter/bin"
+# Install Flutter and add it to the PATH
+git clone https://github.com/flutter/flutter.git --depth 1 -b stable --single-branch /usr/local/share/flutter
+export PATH="$PATH:/usr/local/share/flutter/bin"
 
 echo "Flutter installed. Building the project..."
 flutter build web --release
